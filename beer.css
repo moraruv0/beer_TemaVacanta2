@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color:midnightblue;
+}
+@keyframes moveup {
+    from {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-110vh);
+    }
+}
+@keyframes motion {
+    from{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(5vw,-30vh);
+    }
+    50%{
+        transform: translate(0,-50vh);
+    }
+    75%{
+        transform: translate(5vw,-70vh);
+    }
+    to{
+        transform: translate(0,-110vh);
+    }
+  }
+  @keyframes lmotion{
+    from{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(-5vw,-30vh);
+    }
+    50%{
+        transform: translate(0,-50vh);
+    }
+    75%{
+        transform: translate(-5vw,-70vh);
+    }
+    to{
+        transform: translate(0,-110vh);
+    }
+  }
+body{
+    background-color: #cccccc;
+    overflow: hidden;
+}
+ul{
+    text-align: center;
+}
+li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin: 2em 10em;
+}
+h1{
+text-align: center; 
+font-size: 5em;   
+padding: 1.5em;
+}
+#back{
+    position: absolute;
+    display: block;
+    width: 30vw;
+    height: 120vh;
+    background-color: #dddddd;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    top: -10vh;
+    left: 34.3vw;
+    z-index: -1;
+}
+
+
+
+
+#small div, #medium div, #big div{
+    position: absolute;
+    border-radius:50%;
+    background-color: rgb(172, 57, 114);
+    bottom: -2em;
+}
+
+#small div{
+    height: 1em;
+    width: 1em;
+
+}
+#medium div{
+    height: 1.5em;
+    width: 1.5em;
+}
+#big div{
+    height: 2em;
+    width: 2em;
+}
+
+.smalljum, .mediumjum, .bigjum{
+    animation-name:moveup;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+#s1{
+    left: 50.5vw;
+    animation-duration: 3.3s;
+}
+#s2{
+    left: 48.7vw;
+    animation-duration: 3.9s;
+}
+#s3{
+    left: 48.9vw;
+    animation-duration: 6.1s;
+}
+#s4{
+    left: 45.3vw;
+    animation-duration: 5.8s;
+}
+#s5{
+    left: 53.5vw;
+    animation-duration: 7.8s;
+}
+#s6{
+    left: 49.8vw;
+    animation-duration: 3.7s;
+}
+#s7{
+    left: 50.4vw;
+    animation-duration: 3.5s;
+}
+#s8{
+    left: 49.6vw;
+    animation-duration: 3.1s;
+}
+#s9{
+    left: 52.8vw;
+    animation-duration: 4.4s;
+}
+#s10{
+    left: 47.3vw;
+    animation-duration: 6.5s;
+}
+
+
+
+#m1{
+    left: 51.3vw;
+    animation-duration:  5.9s;
+}
+#m2{
+    left: 54.7vw;
+    animation-duration: 7.9s;
+}
+#m3{
+    left: 50.1vw;
+    animation-duration: 5.6s;
+}
+#m4{
+    left: 51.2vw;
+    animation-duration: 5.5s;
+}
+#m5{
+    left: 50.6vw;
+    animation-duration: 8.6s;
+}
+#m6{
+    left: 47.7vw;
+    animation-duration: 6s;
+}
+#m7{
+    left: 46.2vw;
+    animation-duration: 8.3s;
+}
+#m8{
+    left: 52.8vw;
+    animation-duration: 4.7s;
+}
+#m9{
+    left: 48.9vw;
+    animation-duration: 5.4s;
+}
+#m10{
+    left: 49.6vw;
+    animation-duration: 6.7s;
+}
+
+
+
+#b1{
+    left: 47.1vw;
+    animation-duration: 4.6s;
+}
+#b2{
+    left: 45.9vw;
+    animation-duration: 5.1s;
+}
+#b3{
+    left: 51.6vw;
+    animation-duration: 4.7s;
+}
+#b4{
+    left: 45.6vw;
+    animation-duration: 4.3s;
+}
+#b5{
+    left: 51.2vw;
+    animation-duration: 6.1s;
+}
+#b6{
+    left: 54.8vw;
+    animation-duration: 5.7s;
+}
+#b7{
+    left: 50.2vw;
+    animation-duration: 7.6s;
+}
+#b8{
+    left: 54.1vw;
+    animation-duration: 4s;
+}
+#b9{
+    left: 51.8vw;
+    animation-duration: 5.6s;
+}
+#b10{
+    left: 51.7vw;
+    animation-duration: 5s;
+}
+
+
+
+.smalljum2, .mediumjum2, .bigjum2{
+    animation-name:motion;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+#s11{
+    left: 49.2vw;
+    animation-duration: 5.2s;
+}
+#s12{
+    left: 48.6vw;
+    animation-duration: 5.7s;
+}
+#s13{
+    left: 50.4vw;
+    animation-duration: 4.3s;
+}
+#s14{
+    left: 50.7vw;
+    animation-duration: 4.6s;
+}
+#s15{
+    left: 47.8vw;
+    animation-duration: 5.3s;
+}
+#s16{
+    left: 52.8vw;
+    animation-duration: 4.2s;
+}
+#s17{
+    left: 48.3vw;
+    animation-duration: 7s;
+}
+#s18{
+    left: 47.1vw;
+    animation-duration: 6.7s;
+}
+#s19{
+    left: 52.6vw;
+    animation-duration: 4.5s;
+}
+#s20{
+    left: 48.5vw;
+    animation-duration: 6s;
+}
+
+
+
+#m11{
+    left: 48vw;
+    animation-duration: 5.1s;
+}
+#m12{
+    left: 50.7vw;
+    animation-duration: 6.4s;
+}
+#m13{
+    left:52.2vw;
+    animation-duration: 10s;
+}
+#m14{
+    left: 50.4vw;
+    animation-duration: 9.6s;
+}
+#m15{
+    left: 48.5vw;
+    animation-duration: 4.1s;
+}
+#m16{
+    left: 44.9vw;
+    animation-duration: 9.4s;
+}
+#m17{
+    left: 44.1vw;
+    animation-duration: 9.5s;
+}
+#m18{
+    left: 44.8vw;
+    animation-duration: 8.5s;
+}
+#m19{
+    left: 51.6vw;
+    animation-duration: 9.9s;
+}
+#m20{
+    left: 52.1vw;
+    animation-duration: 4.6s;
+}
+
+
+
+#b11{
+    left: 49.1vw;
+    animation-duration: 5.8s;
+}
+#b12{
+    left: 49.3vw;
+    animation-duration: 9.6s;
+}
+#b13{
+    left: 50.2vw;
+    animation-duration: 8.4s;
+}
+#b14{
+    left: 51.7vw;
+    animation-duration: 6.8s;
+}
+#b15{
+    left: 50.1vw;
+    animation-duration: 5.7s;
+}
+#b16{
+    left: 51.9vw;
+    animation-duration: 4.2s;
+}
+#b17{
+    left: 47.7vw;
+    animation-duration: 9.7s;
+}
+#b18{
+    left: 51.4vw;
+    animation-duration: 8.2s;
+}
+#b19{
+    left: 49.5vw;
+    animation-duration: 4s;
+}
+#b20{
+    left: 50.7vw;
+    animation-duration: 8.3s;
+}
+
+
+
+.smallpart3, .mediumpart3, .bigpart3{
+    animation-name: lmotion;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+#s21{
+    left: 49.9vw;
+    animation-duration: 7.5s;
+}
+#s22{
+    left: 49.7vw;
+    animation-duration: 6.5s;
+}
+#s23{
+    left: 51.8vw;
+    animation-duration: 5.6s;
+}
+#s24{
+    left: 51vw;
+    animation-duration: 5.8s;
+}
+#s25{
+    left: 52.6vw;
+    animation-duration: 7s;
+}
+#s26{
+    left: 50.3vw;
+    animation-duration: 4.3s;
+}
+#s27{
+    left: 51.4vw;
+    animation-duration: 7.1s;
+}
+#s28{
+    left: 51.3vw;
+    animation-duration: 4.7s;
+}
+#s29{
+    left: 51.1vw;
+    animation-duration: 6.3s;
+}
+#s30{
+    left: 52.7vw;
+    animation-duration: 6.2s;
+}
+
+
+
+#m21{
+    left: 49.4vw;
+    animation-duration: 5.6s;
+}
+#m22{
+    left: 50.7vw;
+    animation-duration: 9.8s;
+}
+#m23{
+    left: 47vw;
+    animation-duration: 9.4s;
+}
+#m24{
+    left: 49vw;
+    animation-duration: 9.9s;
+}
+#m25{
+    left: 52.2vw;
+    animation-duration: 5.1s;
+}
+#m26{
+    left: 49.1vw;
+    animation-duration: 8.8;
+}
+#m27{
+    left: 50.9vw;
+    animation-duration: 4.7s;
+}
+#m28{
+    left: 50.6vw;
+    animation-duration: 7.7s;
+}
+#m29{
+    left: 49.9vw;
+    animation-duration: 7.5s;
+}
+#m30{
+    left: 51.2vw;
+    animation-duration: 4.4s;
+}
+
+
+
+#b21{
+    left: 48.8vw;
+    animation-duration: 4.6s;
+}
+#b22{
+    left: 51.6vw;
+    animation-duration: 4s;
+}
+#b23{
+    left: 48.6vw;
+    animation-duration: 5.6s;
+}
+#b24{
+    left: 50vw;
+    animation-duration: 4.9s;
+}
+#b25{
+    left: 51.7vw;
+    animation-duration: 8.5s;
+}
+#b26{
+    left: 50.1vw;
+    animation-duration: 7.1s;
+}
+#b27{
+    left: 47.8vw;
+    animation-duration: 9.3s;
+}
+#b28{
+    left: 50.6vw;
+    animation-duration: 4.8s;
+}
+#b29{
+    left: 50.9vw;
+    animation-duration: 5.8s;
+}
+#b30{
+    left: 51.1vw;
+    animation-duration: 6.8s;
+}
+
+
