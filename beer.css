@@ -65,11 +65,13 @@ a{
     font-weight: bold;
     margin: 2em 10em;
 }
-h1{
+h1{position: relative;
 text-align: center; 
 font-size: 5em;   
 padding: 1.5em;
+z-index: 2;
 }
+
 #back{
     position: absolute;
     display: block;
@@ -513,5 +515,22 @@ padding: 1.5em;
     left: 51.1vw;
     animation-duration: 6.8s;
 }
+#small div:nth-of-type(odd){
+    z-index: 1;
+}
+#medium div:nth-of-type(odd){
+    z-index: 1;
+}
+#big div:nth-of-type(odd){
+    z-index: 1;
+}
 
-
+#small div:nth-of-type(even){
+    z-index: 3;
+}
+#medium div:nth-of-type(even){
+    z-index: 3;
+}
+#big div:nth-of-type(even){
+    z-index: 3;
+}
